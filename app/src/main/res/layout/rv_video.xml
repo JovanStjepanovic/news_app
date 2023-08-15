@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0f2039">
+
+
+    <TextView
+        android:id="@+id/textViewVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIDEO"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        android:textStyle="bold"/>
+
+
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="22dp"
+        android:background="#ff2e4e"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVideo" />
+
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="310dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="11dp"
+        android:background="#dee1e4"
+        app:layout_constraintStart_toEndOf="@+id/viewLine"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVideo" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+    <TextView
+        android:id="@+id/textViewComments"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/comments_news_detail"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <View
+        android:id="@+id/viewLine3"
+        android:layout_width="90dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="#516c89"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComments" />
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="13dp"
+        android:background="#dee1e4"
+        app:layout_constraintStart_toEndOf="@+id/viewLine3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComments" />
+
+
+    <TextView
+        android:id="@+id/textViewCommentLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="("
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewComments"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewCommentRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:lines="1"
+        android:text=")"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewCommentNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewCommentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:lines="1"
+        android:text="22"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewCommentLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/frameLayout"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:background="#143e6c"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine2">
+
+        <TextView
+            android:id="@+id/textViewAddComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="15dp"
+            android:background="#143e6c"
+            android:text="@string/leave_comment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageViewAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_add_" />
+
+    </FrameLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

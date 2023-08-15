@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.home.HomeFragment"
+    android:fitsSystemWindows="true">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="0dp"
+            app:layout_collapseMode="none"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:titleEnabled="false">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#143e6c"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+
+                    android:id="@+id/imageViewCommentRs"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="58dp"
+                    android:src="@drawable/komentar" />
+
+
+                <TextView
+                    android:id="@+id/textViewKomentar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="65dp"
+                    android:text="komentar"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageViewMenu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/menu" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/recyclerViewCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="120dp"
+                    />
+
+
+
+
+
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerViewNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

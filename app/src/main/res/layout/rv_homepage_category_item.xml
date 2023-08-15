@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_category_background">
+
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+        android:text="NASLOVNA"
+        android:textAllCaps="true"
+        android:textColor="@color/lighter_blue_category_name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+         android:id="@+id/viewLine"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue_category_background"
+       android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCategory"
+        app:layout_constraintStart_toStartOf="@+id/textViewCategory"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategory" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

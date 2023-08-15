@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="30dp"
+        android:text="JKP Šumadija u Kragujevcu preuzima deo pasa iz azila čiji je vlasnik uhapšen"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27.12.2020"
+        android:maxLength="16"
+       android:textSize="20sp"
+       android:textColor="#a6a6a6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:background="#a6a6a6"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+    <ImageView
+        android:id="@+id/imageViewComments"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/commentwhitepng"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewCommentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="7"
+        android:textColor="#1c4471"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewComments"
+        app:layout_constraintStart_toEndOf="@+id/imageViewComments"
+        app:layout_constraintTop_toTopOf="@+id/imageViewComments" />
+
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Autor:"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="#a6a6a6"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+
+    <TextView
+        android:id="@+id/textViewAuthorBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"
+        android:text="M.Jovanovic"
+        android:maxLength="15"
+        android:lines="1"
+        android:textColor="#143e6c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+
+    <TextView
+        android:id="@+id/textViewSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="27dp"
+        android:text="Izvor:"
+        android:textColor="#a6a6a6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewAuthorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+
+    <TextView
+        android:id="@+id/textViewAuthorSourceBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:text="Index.hr"
+        android:textColor="#143e6c"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSource"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

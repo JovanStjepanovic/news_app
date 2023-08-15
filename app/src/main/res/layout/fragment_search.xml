@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.search.SearchFragment">
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#143e6c"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/imageViewCommentRs"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="58dp"
+            android:src="@drawable/komentar" />
+
+
+        <TextView
+            android:id="@+id/textViewKomentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="65dp"
+            android:text="komentar"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+
+            android:id="@+id/imageViewMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/menu" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#143e6c"
+        android:orientation="horizontal"
+
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="120dp">
+
+
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/drawable_background_transparent"
+            android:hint="@string/search"
+            android:textColorHint="@color/white"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+
+            android:id="@+id/imageviewSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/news_search"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_marginTop="190dp"
+        android:paddingBottom="?attr/actionBarSize"  />
+
+
+
+
+
+
+
+
+
+</FrameLayout>

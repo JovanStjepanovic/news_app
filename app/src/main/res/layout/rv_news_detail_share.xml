@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textViewShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/viewLine3"
+        android:layout_width="90dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="#516c89"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShare" />
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="13dp"
+        android:background="#dee1e4"
+        app:layout_constraintStart_toEndOf="@+id/viewLine3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShare" />
+
+
+    <ImageView
+        android:id="@+id/imageviewFace"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_share_news_detail"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine3" />
+
+
+    <ImageView
+        android:id="@+id/imageviewSymbol1"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+
+         android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+         android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewFace"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewFace"
+        app:layout_constraintStart_toStartOf="@id/imageviewFace"
+        app:layout_constraintTop_toTopOf="@+id/imageviewFace" />
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageviewViber"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+        android:background="@drawable/drawable_share_news_detail_viber"
+        app:layout_constraintStart_toEndOf="@+id/imageviewFace"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine3" />
+
+
+
+    <ImageView
+        android:id="@+id/imageviewSymbol2"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/viber"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewViber"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewViber"
+        app:layout_constraintStart_toStartOf="@id/imageviewViber"
+        app:layout_constraintTop_toTopOf="@+id/imageviewViber" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageviewWhatsApp"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/drawable_share_news_detail_whats_app"
+        app:layout_constraintStart_toEndOf="@+id/imageviewViber"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine3" />
+
+
+    <ImageView
+        android:id="@+id/imageviewSymbol3"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewWhatsApp"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewWhatsApp"
+        app:layout_constraintStart_toStartOf="@id/imageviewWhatsApp"
+        app:layout_constraintTop_toTopOf="@+id/imageviewWhatsApp" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageviewInstagram"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/drawable_share_news_detail_instagram_"
+        app:layout_constraintStart_toEndOf="@+id/imageviewWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine3" />
+
+
+
+    <ImageView
+        android:id="@+id/imageviewSymbol4"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/instagram"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewInstagram"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewInstagram"
+        app:layout_constraintStart_toStartOf="@id/imageviewInstagram"
+        app:layout_constraintTop_toTopOf="@+id/imageviewInstagram" />
+
+
+    <ImageView
+        android:id="@+id/imageviewTwitter"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_share_news_detail_twitter"
+        app:layout_constraintStart_toEndOf="@+id/imageviewInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine3" />
+
+
+    <ImageView
+        android:id="@+id/imageviewSymbol5"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewTwitter"
+        app:layout_constraintEnd_toEndOf="@+id/imageviewTwitter"
+        app:layout_constraintStart_toStartOf="@id/imageviewTwitter"
+        app:layout_constraintTop_toTopOf="@+id/imageviewTwitter" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+   <item
+       android:id="@+id/home"
+       android:title="Naslovna"
+       android:icon="@drawable/news_home"
+
+       />
+
+   <item android:title="Najnovije"
+      android:id="@+id/newest"
+       android:icon="@drawable/news_newest"
+       android:iconTint="@color/white"
+       />
+
+   <item android:title="Video"
+       android:id="@+id/video"
+       android:icon="@drawable/news_videos"
+
+       />
+
+   <item android:title="Pretraga"
+       android:id="@+id/search"
+       android:icon="@drawable/news_search"
+       />
+
+
+
+
+
+
+
+</menu>

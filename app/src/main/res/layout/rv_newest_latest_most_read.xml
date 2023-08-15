@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textViewNewest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newest"
+        android:textColor="#a7a7a7"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewMostRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/most_read"
+        android:textColor="#a7a7a7"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNewest"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/textViewComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/comments"
+        android:textColor="#a7a7a7"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewMostRead"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"  />
+
+
+    <View
+        android:id="@+id/viewLine1"
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewest"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#9da4ae"/>
+
+
+    <View
+        android:id="@+id/viewLine2"
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="#9da4ae"
+        app:layout_constraintStart_toEndOf="@+id/viewLine1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewest" />
+
+
+    <View
+        android:id="@+id/viewLine3"
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="#9da4ae"
+        app:layout_constraintStart_toEndOf="@+id/viewLine2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewest" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/viewLine4"
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewest"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:background="#9da4ae"/>
+
+
+    <View
+        android:id="@+id/viewLine5"
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="17dp"
+        android:background="#9da4ae"
+        app:layout_constraintStart_toEndOf="@+id/viewLine1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewest" />
+
+
+    <View
+        android:id="@+id/viewLine6"
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="17dp"
+        android:background="#9da4ae"
+        app:layout_constraintStart_toEndOf="@+id/viewLine2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewest" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerViewLatestNewestMost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMostRead"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

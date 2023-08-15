@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ZavrsniProjekat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="newest">NAJNOVIJE</string>
+    <string name="most_read">NAJČITANIJE</string>
+    <string name="comments">KOMENTARI</string>
+    <string name="editor_choice">IZBOR UREDNIKA</string>
+    <string name="search">Pretraži</string>
+    <string name="weather">VREMENSKA PROGNOZA</string>
+    <string name="currency">KURSNA LISTA</string>
+    <string name="horoscope">HOROSKOP</string>
+    <string name="contact">KONTAKT</string>
+    <string name="terms">USLOVI KORIŠĆENJA</string>
+    <string name="marketing">MARKETING</string>
+    <string name="push_notif">PUSH NOTIFIKACIJE</string>
+    <string name="rate">Srednji Kurs</string>
+    <string name="symbol">Simbol</string>
+    <string name="country">Zemlja</string>
+    <string name="tags">TAGOVI:</string>
+    <string name="share">PODELI:</string>
+    <string name="comments_news_detail">KOMENTARI</string>
+    <string name="reply">Odgovori</string>
+    <string name="leave_comment">OSTAVI KOMENTAR</string>
+    <string name="all_comments">SVI KOMENTARI</string>
+    <string name="related_news">Povezane vesti</string>
+    <string name="no_video">NO VIDEO</string>
+    <string name="failed_to_load">FAILED TO LOAD</string>
+    <string name="more_than_one_char">\"Ime mora imati minimum 1 karakter \"</string>
+    <string name="more_than_five_char">\"Komentar mora imati više od 5 karaktera \"</string>
+    <string name="cant_be_empty">\"Polja ne smeju biti prazna \"</string>
+    <string name="max_char">Korisničko ime može imati maksimalno 120 karaktera dok komentar može imati maksimalno 250 karaktera.</string>
+    <string name="all_news">Prikaži sve vesti</string>
+    <string name="less_news">PRIKAŽI MANJE VESTI</string>
+
+</resources>
